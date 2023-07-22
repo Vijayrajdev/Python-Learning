@@ -1,82 +1,82 @@
-# # constructors
-# class Point:
-#     def __init__(self, x, y):
-#         self.x = x
-#         self.y = y
+# constructors
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
 
-#     def move(self):
-#         print("Move")
+    def move(self):
+        print("Move")
 
-#     def draw(self):
-#         print("draw")
-
-
-# point1 = Point(10, 20)
-# print(point1.x)
-
-# # constructors 2
+    def draw(self):
+        print("draw")
 
 
-# class Person:
+point1 = Point(10, 20)
+print(point1.x)
 
-#     def __init__(self, name):
-#         self.name = name
-
-#     def talk(self):
-#         print(f"Hi, This is {self.name}")
+# constructors 2
 
 
-# John = Person("Jhon smith")
-# John.talk()
+class Person:
 
-# Bob = Person("Bob smith")
-# Bob.talk()
+    def __init__(self, name):
+        self.name = name
 
-# # Inheritance
-
-
-# class Mammal:
-
-#     def walk(self):
-#         print("Walk")
+    def talk(self):
+        print(f"Hi, This is {self.name}")
 
 
-# class Dog(Mammal):
+John = Person("Jhon smith")
+John.talk()
 
-#     def Bark(self):
-#         print("Bark")
+Bob = Person("Bob smith")
+Bob.talk()
 
-
-# class Cat(Mammal):
-
-#     def Annoy(self):
-#         print("Annoying")
+# Inheritance
 
 
-# dog1 = Dog()
-# dog1.Bark()
-# dog1.walk()
+class Mammal:
 
-# cat1 = Cat()
-# cat1.walk()
-# cat1.Annoy()
+    def walk(self):
+        print("Walk")
 
-# # Modules
 
-# import converters
+class Dog(Mammal):
 
-# from converters import lbs_to_kg
+    def Bark(self):
+        print("Bark")
 
-# converters.kg_to_lbs(100)
-# lbs_to_kg(99.99)
 
-# # Module Exercise
+class Cat(Mammal):
 
-# from utils import find_max
+    def Annoy(self):
+        print("Annoying")
 
-# numbers = [12, 3, 4, 6, 7, 89]
-# maximum = find_max(numbers)
-# print(maximum)
+
+dog1 = Dog()
+dog1.Bark()
+dog1.walk()
+
+cat1 = Cat()
+cat1.walk()
+cat1.Annoy()
+
+# Modules
+
+import converters
+
+from converters import lbs_to_kg
+
+converters.kg_to_lbs(100)
+lbs_to_kg(99.99)
+
+# Module Exercise
+
+from utils import find_max
+
+numbers = [12, 3, 4, 6, 7, 89]
+maximum = find_max(numbers)
+print(maximum)
 
 # Packages
 from ecommerce import shopping
