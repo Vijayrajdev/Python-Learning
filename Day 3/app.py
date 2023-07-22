@@ -82,3 +82,32 @@ print(maximum)
 from ecommerce import shopping
 
 shopping.shopping()
+
+# python modules
+
+import random
+
+for i in range(3):
+    print(random.random())
+    print(random.randint(10, 30))
+
+choice = ["Vijay", "Raj", "Vishu", "devi"]
+leader = random.choice(choice)
+print(leader)
+
+# Modules practice
+
+import random
+
+
+class Dice:
+
+    def Roll(self):
+        first = random.randint(1, 6)
+        second = random.randint(1, 6)
+
+        return first, second
+
+
+dice = Dice()
+print(dice.Roll())
